@@ -1,0 +1,4 @@
+---
+nginx_document_root: /webapps/zoomrx
+nginx_domain_name: app
+nginx_gunicorn_socket: 127.0.0.1:8000

@@ -1,0 +1,29 @@
+---
+- name: Install And Configure Nginx
+  hosts: all
+  user: vagrant
+  sudo: yes
+  roles:
+        - nginx
+
+- name: Deploy The Flask Application
+  hosts: all
+  sudo: yes
+  user: vagrant
+  roles:
+        - python-code
+
+- name: Install Redis Server
+  hosts: all
+  sudo: yes
+  user: vagrant
+  roles:
+        - redis
+
+- name: Install Gunicorn
+  hosts: all
+  sudo: yes
+  user: vagrant
+  roles:
+        - gunicorn
+        - supervisor

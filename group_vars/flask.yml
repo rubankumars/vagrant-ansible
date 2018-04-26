@@ -1,0 +1,5 @@
+---
+python_flask_git_repo: https://github.com/ZoomRx/zoomrx-devops-challenge.git
+python_req_file: requirements.txt
+python_flask_setting_path: config.py
+python_app_path: /webapps/zoomrx
